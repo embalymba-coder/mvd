@@ -1,0 +1,313 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+line-height: 1.6;
+color: #000;
+background-color: #fff;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+header {
+background-color: #fff;
+border-bottom: 1px solid #e5e5e5;
+padding: 16px 0;
+}
+
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo {
+height: 50px;
+width: auto;
+cursor: pointer;
+transition: opacity 0.2s;
+border-radius: 12px;
+}
+
+.logo:hover {
+opacity: 0.8;
+}
+
+nav {
+display: flex;
+gap: 24px;
+flex-wrap: wrap;
+}
+
+nav a {
+color: #000;
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.3px;
+transition: color 0.2s;
+}
+
+nav a:hover {
+color: #555;
+}
+
+main {
+min-height: calc(100vh - 200px);
+padding: 32px 0;
+}
+
+h1 {
+font-size: 32px;
+font-weight: 700;
+margin-bottom: 12px;
+text-align: center;
+letter-spacing: -0.5px;
+}
+
+h2 {
+font-size: 20px;
+font-weight: 600;
+margin-top: 24px;
+margin-bottom: 12px;
+letter-spacing: -0.3px;
+}
+
+h3 {
+font-size: 18px;
+font-weight: 600;
+margin-top: 16px;
+margin-bottom: 8px;
+letter-spacing: -0.2px;
+}
+
+.subtitle {
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+color: #555;
+margin-bottom: 24px;
+letter-spacing: -0.2px;
+}
+
+.flag {
+display: block;
+width: 100%;
+max-width: 100%;
+margin: 0 auto 24px;
+border-radius: 16px;
+}
+
+.emblem {
+display: block;
+width: 100%;
+max-width: 120px;
+margin: 0 auto 24px;
+border-radius: 12px;
+}
+
+.news-section {
+margin-top: 32px;
+}
+
+.news-section h3 {
+margin-bottom: 24px;
+text-align: center;
+}
+
+.news-item {
+background-color: #f5f5f5;
+padding: 24px;
+margin-bottom: 24px;
+border-radius: 12px;
+border: 1px solid #e5e5e5;
+}
+
+.news-date {
+font-size: 12px;
+color: #888;
+margin-bottom: 8px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.news-item img {
+display: block;
+width: 100%;
+max-width: 100%;
+margin: 16px auto;
+border-radius: 8px;
+}
+
+.news-item p {
+font-size: 15px;
+line-height: 1.7;
+text-align: left;
+}
+
+.video-container {
+position: relative;
+width: 100%;
+padding-top: 56.25%;
+margin: 16px auto;
+background-color: #000;
+border-radius: 8px;
+overflow: hidden;
+}
+
+.video-container iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+border: none;
+}
+
+.content {
+margin-top: 24px;
+}
+
+.content p {
+font-size: 15px;
+margin-bottom: 16px;
+text-align: left;
+line-height: 1.7;
+}
+
+.content ul {
+margin-left: 24px;
+margin-bottom: 16px;
+}
+
+.content ul li {
+margin-bottom: 8px;
+font-size: 15px;
+line-height: 1.7;
+}
+
+.content ol {
+margin-left: 24px;
+margin-bottom: 16px;
+}
+
+.content ol li {
+margin-bottom: 16px;
+font-size: 15px;
+line-height: 1.7;
+text-align: left;
+}
+
+.officers {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 24px;
+margin-top: 32px;
+}
+
+.officer-card {
+background-color: #f5f5f5;
+padding: 24px;
+text-align: center;
+border-radius: 12px;
+border: 1px solid #e5e5e5;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.officer-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.officer-card img {
+width: 100%;
+max-width: 100%;
+height: auto;
+margin-bottom: 16px;
+border-radius: 8px;
+}
+
+.officer-card h2 {
+font-size: 16px;
+margin: 0;
+font-weight: 600;
+letter-spacing: -0.2px;
+}
+
+footer {
+background-color: #f5f5f5;
+color: #000;
+padding: 24px 0;
+text-align: center;
+margin-top: 40px;
+border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+margin: 4px 0;
+font-size: 12px;
+letter-spacing: 0.3px;
+}
+
+footer a {
+color: #000;
+text-decoration: none;
+transition: color 0.2s;
+}
+
+footer a:hover {
+color: #555;
+}
+
+@media (max-width: 768px) {
+header .container {
+flex-direction: column;
+gap: 16px;
+}
+
+nav {
+justify-content: center;
+gap: 12px;
+}
+
+nav a {
+font-size: 13px;
+}
+
+h1 {
+font-size: 26px;
+}
+
+h2 {
+font-size: 18px;
+}
+
+h3 {
+font-size: 16px;
+}
+
+main {
+padding: 16px 0;
+}
+
+.news-item {
+padding: 16px;
+}
+
+.officers {
+grid-template-columns: 1fr;
+}
+
+.video-container {
+padding-top: 56.25%;
+}
+}
